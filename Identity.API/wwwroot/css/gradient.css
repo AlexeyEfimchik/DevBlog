@@ -1,0 +1,46 @@
+﻿.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover {
+    color: #fff !important;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+    .btn-hover:focus {
+        outline: none;
+
+    }
+
+    .btn-hover.color-red {
+        background-image: linear-gradient(to right, #CE2B2B, #E44F17,#CE2B2B, #E44F17);
+    }
+
+    .btn-hover.color-purple {
+        background-image: linear-gradient(to right, #2862AC, #3988ed, #2862AC, #3988ed);
+        opacity: 0.9;
+    }
+
+    .btn-hover.color-gray {
+        background-image: linear-gradient(to right, #FFFFFF, #FFFFFF, #f5f5f5, #f5f5f5);
+    }
+
+    .btn-hover.color-blue {
+        background-image: linear-gradient(to right, #25aae1, #4481eb, #25aae1, #4481eb);
+    }
+
+    .btn-hover.color-darkblue {
+        background-image: linear-gradient(to right, #25aae1, #1B6EC2, #25aae1, #1B6EC2);
+    }
+
+    .btn-hover.color-laguna {
+        background-image: linear-gradient(to right, #1775B8, #17A2B8, #25aae1, #1775B8);
+    }

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DevBlog - @ViewData["Title"]</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/animate/css/animate.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-toggle/css/bootstrap4-toggle.css" />
+        <link rel="stylesheet" href="~/css/gradient.css" />
+    </environment>
+
+    <environment names="Staging,Production">
+
+    </environment>
+</head>
+<body class="main-background-color">
+    <canvas id="canvas"></canvas>
+
+    <div class="container h-100">
+        @RenderBody()
+    </div>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/background-node.js"></script>
+        <script src="~/lib/wow/wow.min.js"></script>
+        <script src="~/lib/bootstrap-toggle/js/bootstrap4-toggle.js"></script>
+        <script src="~/js/site.js"></script>
+    </environment>
+
+    <environment names="Staging, Production">
+
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

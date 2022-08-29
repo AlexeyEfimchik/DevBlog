@@ -1,0 +1,13 @@
+﻿@model Identity.API.Models.AccountViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    string partialView = "_RegisterPartial-MVC.cshtml";
+    Layout = "_Layout";
+}
+
+<partial name=@partialView model=@Model />
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

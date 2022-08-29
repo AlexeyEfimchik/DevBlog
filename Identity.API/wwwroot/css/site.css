@@ -1,0 +1,164 @@
+﻿.image {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #FF6363;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Form and form controls
+-------------------------------------------------- */
+.form {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+    .form .checkbox {
+        font-weight: 400;
+    }
+
+    .form .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+        .form .form-control:focus {
+            z-index: 2;
+        }
+
+.lastcontrol {
+    margin-bottom: 10px;
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.firstcontrol {
+    margin-top: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.middlecontrol {
+    margin-bottom: -1px;
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.page-content-container {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    background: white;
+    padding: 30px;
+}
+
+.main-background-color {
+    background-color: #FCFCFC;
+}
+
+.div-error {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.oveflow-wrap {
+    overflow-wrap: break-word;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+    .validation-summary-errors li {
+        list-style-type: none;
+    }
+
+    .validation-summary-errors ul {
+        margin-left: 0;
+        padding-left: 0;
+    }

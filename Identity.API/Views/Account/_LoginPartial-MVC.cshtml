@@ -1,0 +1,29 @@
+﻿@model Identity.API.Models.AccountViewModels.LoginViewModel
+
+
+<div class="row justify-content-center align-items-center h-100">
+    <div class="col">
+        <form class="form text-center m-auto page-content-container shadow-lg wow animate__animated animate__zoomIn" asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+
+            <img src="~/images/devbloglogo.svg" class="center" alt="DevBlogLogo">
+            <input type="hidden" asp-for="ReturnUrl" />
+            <span class="h2 mb-2 font-weight-bold text-danger text-center">Dev</span><span class="h2 mb-3 font-weight-bold text-primary text-center">Blog</span>
+            <h1 class="h3 mt-2 mb-3 font-weight-normal text-center">Are you registered?</h1>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="text" class="form-control firstcontrol" placeholder="Email" asp-for="Email" required>
+            <input type="password" class="form-control lastcontrol" asp-for="Password" placeholder="Password" autocomplete="on" required>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" asp-for="RememberMe" class="shadow-sm" data-toggle="toggle" data-on="Yes" data-off="No" data-onstyle="success" data-offstyle="primary">
+                    Remember me?
+                </label>
+            </div>
+            <button class="col btn-lg btn btn-hover color-blue shadow-sm" type="submit">Sign in</button>
+            <p class="text-center m-2 font-weight-bold">
+                <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" class="">Register as a new user?</a>
+            </p>
+        </form>
+
+        <p class="mb-0 mt-4 text-muted text-center">© 2022 - DevBlog </p>
+    </div>
+</div>

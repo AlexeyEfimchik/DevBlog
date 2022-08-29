@@ -1,0 +1,13 @@
+﻿@model Identity.API.Models.AccountViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Log in";
+    string partialView = "_LoginPartial-MVC.cshtml";
+    Layout = "_Layout";
+}
+
+<partial name=@partialView model=@Model />
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

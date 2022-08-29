@@ -1,0 +1,25 @@
+﻿@model Identity.API.Models.AccountViewModels.LogoutViewModel
+
+@{
+    ViewData["Title"] = "Logout";
+    Layout = "_Layout";
+}
+
+<div class="row justify-content-center align-items-center h-100">
+    <div class="col">
+        <form class="form text-center m-auto page-content-container shadow-lg wow animate__animated animate__zoomIn" asp-controller="Account" asp-action="Logout">
+
+            <img src="~/images/devbloglogo.svg" class="center" alt="DevBlogLogo">
+
+            <input type="hidden" name="logoutId" value="@Model.LogoutId"  />
+
+            <span class="h2 mb-2 font-weight-bold text-danger text-center">Dev</span><span class="h2 mb-3 font-weight-bold text-primary text-center">Blog</span>
+
+            <h1 class="h3 mt-2 mb-3 font-weight-normal text-center">Logout</h1>
+            <p>Would you like to logout of IdentityServer?</p>
+
+            <input type="hidden" name="logoutId" value="@Model.LogoutId" />
+            <button class=" btn btn-hover color-blue mt-2 col " type="submit">Confirm</button>
+        </form>
+    </div>
+</div>

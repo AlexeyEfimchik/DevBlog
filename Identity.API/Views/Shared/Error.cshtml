@@ -1,0 +1,23 @@
+﻿@model Identity.API.Models.ErrorViewModel
+
+@{
+    var error = Model?.Error?.Error;
+    var request_id = Model?.Error?.RequestId;
+
+    ViewData["Title"] = "Error";
+    Layout = "_Layout";
+}
+
+<div class="row justify-content-center align-items-center h-100">
+    <div class="col">
+        <div class="div-error text-center m-auto page-content-container shadow-lg wow animate__animated animate__zoomIn">
+
+            <img src="~/images/error.svg" class="center image-error" alt="DevBlogError">
+
+            <div class="text-center oveflow-wrap">
+                <h1 class=" mb-2 font-weight-bold text-danger">@error</h1>
+                <h2 class=" mb-3  font-weight-normal">Request Id: @request_id</h2>
+            </div>
+        </div>
+    </div>
+</div>

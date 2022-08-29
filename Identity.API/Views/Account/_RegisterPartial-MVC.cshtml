@@ -1,0 +1,30 @@
+﻿@model Identity.API.Models.AccountViewModels.RegisterViewModel
+
+<div class="row justify-content-center align-items-center h-100">
+    <div class="form text-center m-auto page-content-container shadow-lg wow animate__animated animate__zoomIn">
+        <form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+
+            <img src="~/images/devbloglogo.svg" class="center" alt="DevBlogLogo">
+            <span class="h2 mb-2 font-weight-bold text-danger text-center">Dev</span><span class="h2 mb-3 font-weight-bold text-primary text-center">Blog</span>
+
+            <h4 class="h3 mt-2 mb-3 font-weight-normal text-center">Create new account</h4>
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <input type="text" asp-for="User.FirstName" class="form-control firstcontrol shadow-sm" placeholder="Name" required>
+
+            <input type="text" asp-for="User.LastName" class="form-control middlecontrol shadow-sm" placeholder="Last name" required>
+
+            <input asp-for="User.PhoneNumber" class="form-control middlecontrol form-input" placeholder="Phone number" required" />
+
+            <input type="email" asp-for="Email" class="form-control middlecontrol shadow-sm" placeholder="Email" required>
+
+            <input type="password" asp-for="Password" class="form-control middlecontrol shadow-sm mb-0" placeholder="Password" required />
+
+            <input type="password" asp-for="ConfirmPassword" class="form-control lastcontrol shadow-sm mb-0" placeholder="Confirm password" required />
+
+            <div class="col-12 p-0 ">
+                <button class="col btn-lg btn btn-hover color-blue mt-3 shadow-sm" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
